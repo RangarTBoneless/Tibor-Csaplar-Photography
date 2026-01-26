@@ -12,17 +12,61 @@
 <body>
     <div class="container">
         <header>
-            <h1>Tibor Csaplar Photography</h1>
-        <nav>
+            <h1><a class="title" href="#home">Tibor Csaplar Photography</a></h1>
+            <img class="bg-img" src="images/0Y0A2374.jpg">
+        <nav aria-label="Main navigation">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#blog">Blog</a></li>
+                <li><a class="navtext" href="#home">Home</a></li>
+                <li><a class="navtext" href="#about">About</a></li>
+                <li><a class="navtext" href="#pro-folders">Projects</a></li>
+                <li><a class="navtext" href="#contact">Contact</a></li>
+                <li><a class="navtext" href="#blog">Blog</a></li>
             </ul>
         </nav>
         </header>
     </div>
+    <main>
+        <section id="pro-folders" class="projects">
+            <ul class="folders-list">
+                <li>
+                    <a class="folders" href="#portraits">Portraits</a>
+                </li>
+                <li>
+                    <a class="folders" href="#landscapes">Landscapes</a>
+                </li>
+                <li>
+                    <a class="folders" href="#street">Street</a>
+                </li>
+                <li>
+                    <a class="folders" href="#art">Art</a>
+                </li>
+            </ul>
+        </section>
+        <section>
+                <div id="portraits" class="gallery">
+                    <a href="#portraits-full">
+                        <img class="gallery-img" src="images/portraits/0Y0A2673.jpg" alt="Portraits">
+                    </a>
+                </div>
+                <div id="portraits-full" class="lightbox">
+                    <a href="#portraits">
+                        <img src="images/portraits/0Y0A2673.jpg" alt="Portraits Full ">
+                    </a>                
+                </div>
+                <div id="landscapes" class="gallery">
+                    <img class="gallery-img" src="" alt="Landscapes">
+                </div>
+
+                <div id="street" class="gallery">
+                    <img class="gallery-img" src="" alt="Street">
+                </div>
+
+                <div id="art" class="gallery">
+                    <img class="gallery-img" src="" alt="Art">
+                </div>
+        </section>
+
+
+    </main>
 </body>
 </html>
