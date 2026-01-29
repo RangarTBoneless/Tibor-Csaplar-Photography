@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Tibor Csaplar Photography</title>
+    <title>TIBOR CSAPLAR WORKS</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="bg-img">
+        <img src="images/0Y0A2374.jpg">
+    </div>
     <div class="container">
         <header>
-            <h1><a class="title" href="#home">Tibor Csaplar Photography</a></h1>
-            <img class="bg-img" src="images/0Y0A2374.jpg">
+            <h1><a class="title" href="#home">TIBOR CSAPLAR WORKS</a></h1>
         <nav aria-label="Main navigation">
             <ul>
                 <li><a class="navtext" href="#home">Home</a></li>
@@ -42,31 +44,47 @@
                 </li>
             </ul>
         </section>
-        <section>
-                <div id="portraits" class="gallery">
-                    <a href="#portraits-full">
-                        <img class="gallery-img" src="images/portraits/0Y0A2673.jpg" alt="Portraits">
-                    </a>
-                </div>
-                <div id="portraits-full" class="lightbox">
-                    <a href="#portraits">
-                        <img src="images/portraits/0Y0A2673.jpg" alt="Portraits Full ">
-                    </a>                
-                </div>
-                <div id="landscapes" class="gallery">
-                    <img class="gallery-img" src="images/placeholder.jpg" alt="Landscapes">
-                </div>
+        <section id="portraits" class="gallery">
+    <div class="image-grid">
+        <!-- Image 1 -->
+        <a href="#img1">
+            <img src="images/portraits/mother.jpg" alt="Portrait 1">
+        </a>
 
-                <div id="street" class="gallery">
-                    <img class="gallery-img" src="images/placeholder.jpg" alt="Street">
-                </div>
+        <!-- Image 2 -->
+        <a href="#img2">
+            <img src="images/portraits/head.jpg" alt="Portrait 2">
+        </a>
 
-                <div id="art" class="gallery">
-                    <img class="gallery-img" src="images/placeholder.jpg" alt="Art">
-                </div>
-        </section>
+        <!-- Image 3 -->
+        <a href="#img3">
+            <img src="images/portraits/messy.jpg" alt="Portrait 3">
+        </a>
+    </div>
 
+    <!-- Lightboxes -->
+    <div id="img1" class="lightbox">
+        <a href="#portraits">
+            <img src="images/portraits/mother.jpg" alt="Portrait 1">
+        </a>
+    </div>
 
+    <div id="img2" class="lightbox">
+        <a href="#portraits">
+            <img src="images/portraits/head.jpg" alt="Portrait 2">
+        </a>
+    </div>
+
+    <div id="img3" class="lightbox">
+        <a href="#portraits">
+            <img src="images/portraits/messy.jpg" alt="Portrait 3">
+        </a>
+    </div>
+</section>
+>
     </main>
-</body>
+    <footer>
+        <p>Copyright &copy; Tibor Csaplar. All Rights Reserved.</p>
+    </footer>
+    </body>
 </html>
