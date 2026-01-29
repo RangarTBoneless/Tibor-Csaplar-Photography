@@ -2,6 +2,8 @@ html, body {
     line-height: 1.6;
     font-family: "Cormorant Garamond", serif;
     margin: 0;
+    scroll-behavior: auto;
+    overflow-anchor: none;
 }
 
 header {
@@ -10,6 +12,10 @@ header {
     width: 100%;
     background: transparent;
     z-index: auto;
+}
+
+:target {
+    scroll-margin-top: 660px;
 }
 
 
@@ -62,10 +68,9 @@ h1 {
     text-align: center;
 }
 
-.projects:target {
+#pro-folders:target {
     display: block;
 }
-
 
 .gallery {
     display: none;
@@ -108,9 +113,10 @@ li {
     font-size: 1.6rem;
 }
 
+
 main {
-    padding-top: 260px;
-    padding-bottom: 300px;
+    padding-top: 60px;
+    padding-bottom: 0px;
 }
 
 .navtext {
@@ -141,6 +147,8 @@ main ul {
     z-index: 1000;
     flex-direction: column;
     padding: 1rem;
+    cursor: zoom-out;
+    scroll-margin-top: 0;
 }
 
 .lightbox img {
@@ -170,18 +178,10 @@ a {
     cursor: pointer;
 }
 
-
-#portraits,
-#landscapes,
-#street,
-#art {
-    scroll-margin-top: 260px;
-}
-
 footer p {
     position: static;
     text-align: center;
-    margin: 4rem 0 2rem;
+    margin: 400px 0px 20px 0px;
 }
 
 
