@@ -248,3 +248,25 @@ footer p {
         gap: 20px;
     }
 }
+
+@media (max-width: 768px) {
+    .bg-img {
+        display: none;
+    }
+
+    body {
+        background: white;
+    }
+}
+
+@media (max-width: 1024px) {
+    .bg-img img {
+        opacity: 0.15;
+    }
+}
+
+@media (max-width: 768px) {
+    .bg-img {
+        display: none;
+    }
+}
