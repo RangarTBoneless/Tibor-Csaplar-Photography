@@ -4,6 +4,8 @@ html, body {
     margin: 0;
     scroll-behavior: auto;
     overflow-anchor: none;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 header {
@@ -12,6 +14,10 @@ header {
     width: 100%;
     background: transparent;
     z-index: auto;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 :target {
@@ -23,7 +29,7 @@ header {
     max-width: 960px;
     width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px 1.5rem;
 }
 
 h1 {
@@ -69,6 +75,11 @@ h1 {
     text-align: center;
 }
 
+.projects ul {
+    padding: 0 1.5rem;
+}
+
+
 #pro-folders:target {
     display: block;
 }
@@ -80,6 +91,10 @@ h1 {
 
 .gallery:target {
     display: block;
+}
+
+img {
+    max-width: 100%;
 }
 
 .image-grid {
@@ -105,7 +120,7 @@ nav ul {
     justify-content: center;
     gap: 40px;
     list-style: none;
-    padding: 0;
+    padding: 0 1.5rem;
     margin: 0;
     flex-wrap: nowrap;
 }
@@ -116,8 +131,7 @@ li {
 
 
 main {
-    padding-top: 60px;
-    padding-bottom: 0px;
+    padding: 60px 1.5rem 0;
 }
 
 .navtext {
@@ -197,5 +211,40 @@ footer p {
     align-items: center;
     gap: 1rem;
       
+    }
+}
+
+@media (max-width: 768px) {
+
+    .title {
+        font-size: 2.4rem;
+        letter-spacing: 2px;
+        padding: 0 1rem;
+    }
+
+    .navtext {
+        font-size: 1rem;
+        letter-spacing: 3px;
+    }
+
+    main ul {
+        padding: 0 1.5rem;
+        gap: 24px;
+        flex-wrap: wrap;
+    }
+
+    .image-grid {
+        padding: 0 1.5rem;
+    }
+
+    footer p {
+        margin: 200px 1rem 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-wrap: wrap;
+        gap: 20px;
     }
 }
