@@ -6,6 +6,12 @@ html, body {
     overflow-anchor: none;
     max-width: 100%;
     overflow-x: hidden;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -20,9 +26,6 @@ header {
     box-sizing: border-box;
 }
 
-:target {
-    scroll-margin-top: 660px;
-}
 
 
 .container {
@@ -68,6 +71,39 @@ h1 {
     pointer-events: none;
 }
 
+/* Shared section layout */
+section {
+    display: none;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+/* Active section */
+section.active {
+    display: block;
+}
+
+/* About section styling */
+.about h2 {
+    text-align: center;
+    font-family: "Cinzel", serif;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.about p {
+    text-align: center;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.25rem;
+    line-height: 1.9;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+
 .projects {
     position: relative;
     display: none;
@@ -79,10 +115,6 @@ h1 {
     padding: 0 1.5rem;
 }
 
-
-#pro-folders:target {
-    display: block;
-}
 
 .gallery {
     display: none;
@@ -131,8 +163,37 @@ li {
 
 
 main {
+    flex: 1;
     padding: 20px 1.5rem 0;
+    box-sizing: border-box;
 }
+
+/* Unified section system */
+main section {
+    display: none;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+main section.active {
+    display: block;
+    opacity: 1;
+}
+
+/* ABOUT text */
+.about p {
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.9;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
 
 .navtext {
     font-size: 1.2rem;
@@ -186,6 +247,7 @@ main ul {
     font-weight: bold;
 }
 
+
 a {
     display: inline-block;
     font-size: 1.2rem;
@@ -194,14 +256,18 @@ a {
     cursor: pointer;
 }
 
-footer p {
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 40px 0 200px; /* minimum 200px space */
     font-size: 1.2rem;
     font-weight: 300;
-    position: static;
-    text-align: center;
-    margin: 400px 0px 20px 0px;
+    margin: 0;
 }
 
+footer p {
+    margin: 0;
+}
 
 
 @media (max-width: 300px) {
@@ -268,5 +334,11 @@ footer p {
 @media (max-width: 768px) {
     .bg-img {
         display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding-bottom: 150px;
     }
 }
